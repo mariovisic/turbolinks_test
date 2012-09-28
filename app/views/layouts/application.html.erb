@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <h1>Making apps faster is really cool. This is an awesome test.</h1>
+    <%= image_tag 'rails.png' %>
+  </header>
 
-<%= yield %>
+  <div id="content">
+    <%= yield %>
+  </div>
 
+  <footer>
+    <p>Content for the bottom of the page.</p>
+  </footer>
 </body>
 </html>

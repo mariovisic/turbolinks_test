@@ -52,8 +52,9 @@ With 1000 pages:
 ```
 $ rspec
        user     system      total        real
- no turbolinks 11.170000   0.980000  12.460000 (138.656728)
-yes turbolinks 10.800000   0.870000  11.670000 ( 80.436286)
+ no turbolinks 17.870000   1.150000  19.200000 (124.227645)
+yes turbolinks 11.580000   0.530000  12.110000 ( 68.556318)
+yes pjax 10.590000   0.520000  11.110000 ( 68.087851)
 ```
 
 With 100 pages:
@@ -61,7 +62,8 @@ With 100 pages:
 ```
 $ rspec
        user     system      total        real
- no turbolinks  1.640000   0.190000   2.140000 ( 15.652763)
-yes turbolinks  1.120000   0.090000   1.210000 (  7.776116)
+ no turbolinks  3.230000   0.230000   3.850000 ( 14.655988)
+yes turbolinks  1.160000   0.060000   1.220000 (  7.245744)
+yes pjax  1.090000   0.050000   1.140000 (  6.639887)
 ```
 

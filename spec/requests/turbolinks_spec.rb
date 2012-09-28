@@ -20,6 +20,14 @@ describe "Turbolinks" do
           click_link "next"
         end
       end
+      x.report "yes pjax" do
+        visit "/pages/1?pjax=true"
+
+        n.times do
+          click_link "next"
+        end
+      end
+
     end
   end
 end

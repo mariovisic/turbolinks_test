@@ -15,3 +15,6 @@
 //= require_tree .
 
 //= require turbolinks
+
+//= require jquery.pjax
+$('a[data-pjax]').pjax({container: '#content'})

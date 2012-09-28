@@ -6,9 +6,12 @@ class PagesController < ApplicationController
     if params[:turbo]
       @link_opts = {}
       @url_opts = {:turbo => true}
+    elsif params[:pjax]
+      @link_opts = { :"data-no-turbolink" => true, :"data-pjax" => true}
+      @url_opts = {:pjax => true}
     else
-      @url_opts = {}
       @link_opts = { :"data-no-turbolink" => true}
+      @url_opts = {}
     end
   end
 end
